@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e3647;
+    color: #f7f3f4;
+}
+body{
+    width: 100%;
+}
+
+/*============================Navbar======================================*/
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo span{
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+li, a, button, span{
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0%;
+    background-color: #272b29;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 50px;
+}
+.right-side-nav{
+    display: flex;
+    align-items: center;
+    margin-right:50px ;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 50px;
+}
+.nav-links li a{
+    transition: all 0,3s ease 0s;
+}
+.nav-links li a:hover{
+    color: #0088a9;
+}
+button{
+    display: inline-block;
+    padding: 9px 25px;
+    background-color: #00ABE790;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0,3s ease 0s;
+    margin-left: 20px;
+}
+
+button:hover{
+    background-color: #00ABE770;
+}
+.ri-menu-line{
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+.dropdown{
+    display: none;
+    margin-right: 20px ;
+}
+
+.dropdown-menu
+{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 95px;
+    height: 0;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #272b29;
+    overflow: hidden;
+    transition: height 2s ease-out;
+}
+.dropdown-menu li{
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-menu .cta2, .dropdown-menu .cta2 button{
+    width: 100%;
+    margin-left: 0;
+}
+
+.dropdown-menu.open{
+    height: 300px;
+}
+
+
+/*Navbar Responsiveness*/
+@media (max-width: 992px){
+    .nav-links li, .cta{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    .dropdown-menu.open{
+        display: block;
+    }
+}
+
+/*======================HERO SECTION=======================*/
+.section{
+    padding: 100px;
+    min-height: 80vh;
+    background-color: #2e3647;
+}
+.grid{
+    display: grid;
+    gap: 9rem;
+    grid-template-columns: 1fr 1fr;
+}
+.container{
+    max-width: 100rem;
+    margin: auto;
+}   
+
+.section-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #0a5faa;*/
+    /*background-image: linear-gradient(to bottom right,#98bfad 40%,#81afb1 )*/
+}
+.section-hero-data{
+    padding: 0;
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    justify-content: center;
+}
+.reach button{
+    font-weight: 600;
+    width: 130px;
+    margin: 20px 0;
+    border-radius: 5px;
+    padding: 15px 30px;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+
+.reach1 button{
+    background: linear-gradient(90deg,#755bea,#ff72c0);
+    margin-left: 30px;
+}
+.section-hero-image{
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+h1{
+    font-size: 4.5rem;
+    margin: 0;
+    padding: 0;
+}
+.hero-image{
+    width: 100%;
+    height: auto;
+    min-width: 400px;
+    max-width: 700px;
+    border-radius: 50px;
+}
+.hero-heading{
+    margin: 0;
+}
+.hero-para{
+    max-width: 30rem;
+}
+
+@media (max-width: 992px){
+    .grid{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: minmax(400px,1fr);
+    }
+
+}
+@media (max-width: 632px)
+{
+    .grid{
+        display: grid;
+        gap: 1rem;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0;
+    }
+    .hero-heading{
+        margin: 0;
+        font-size: 0.7rem;
+    }
+    .hero-para{
+        max-width: 30rem;
+        font-size: 0.8rem;
+    }
+    .hero-image{
+        width: 100%;
+        min-width: 100px;
+        height: auto;
+        max-width: 700px;
+        border-radius: 50px;
+    }
+    .section-hero{
+        display: flex;
+        justify-content:center ;
+    }
+
+}
+
+/*===========SKILL SECTION===================*/
+.skill-section{
+    /*background-color: #84ae9a;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+H2{
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    /*text-decoration: underline  #b3d0bc;*/
+    background-color: #809a74;
+    border-radius: 60px;
+    padding:2px 50px;
+}
+
+.skill-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top:40px;
+    gap: 3rem;
+    padding: 0;
+}
+
+.skill-icon{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.skill-text{
+    padding: 0 20px;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.html-icon{
+    color: #f06529;
+}
+.css-icon{
+    color: #264de4;
+}
+.js-icon{
+    color:#F0DB4F ;
+}
+.bootstrap-icon{
+    color:#6610f2;
+}
+.Cpp-icon{
+    color:#edf0f1
+}
+.git-icon{
+    color:#56606c;
+}
+.github-icon{
+    color: black;
+}
+.skill-card{
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding:20px 0;
+    min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.skill-types{
+    background-color: #181b1a;
+    padding:70px 3.5vw;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(max-content, 500px));
+    gap: 3rem;
+    margin: 0;
+    justify-content: space-between;
+}
+.skill-heading{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.all-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    /*padding:70px 40px;
+    border-radius: 30px;
+    max-width: 1200px;*/
+    margin: auto;
+}
+
+@media (max-width: 992px){
+    .skill-card{
+        padding:20px 0;
+        min-width: 200px;
+    }
+    .skill-types{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(max-content, 600px));
+        gap: 3vw;
+        margin: 0;
+        justify-content: space-between;
+        padding: 70px 10vw;
+    }
+    .skill-list{
+        margin-top:40px;
+        gap: 3rem;
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px)
+{
+    .skill-types{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3vw;
+        padding: 70px 15vw;
+    }
+}
+
+/*========================PROJECT SECTION=========================*/
+
+.project-section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /*background-color: #84ae9a;*/
+}
+.project-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    
+    margin: auto;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(450px, 450px));
+    gap: 4rem;
+    height: 100%;
+}
+.project-card
+{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #46526c;
+    padding: 3vw 0px;
+    border-radius: 20px;
+    height: 500px;
+    transition: 1s all ease-in-out;
+}
+.project-card:hover{
+    background-color: #a2c3a8;
+}
+
+.project-card:hover .project-image{
+    transform: scale(1.2);
+}
+
+.project-image{
+    width: 400px;
+    height: 230px;
+    transition: 0.5s all ease-in-out;
+}
+.project-text{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+.project-desc{
+    text-align: center;
+    font-size: 1.1rem;
+}
+.project-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.project-button button{
+    margin: 0px 0;
+    border-radius: 50px;
+    padding: 15px 30px;
+}
+
+@media (max-width: 1500px){
+    .project-grid{
+        grid-template-columns: repeat(2,minmax(430px, 450px));
+        grid-template-rows: 1fr 1fr;
+    }
+   
+}
+@media (max-width: 992px){
+    .project-grid{
+        grid-template-columns: minmax(430px,450px);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+}
+@media (max-width: 576px)
+{
+    .project-grid{
+        grid-template-columns: minmax(10vh,450px);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .project-image{
+        width: 300px;
+        height: 190px;
+        transition: 0.5s all ease-in-out;
+    }
+}
+
+/*=========================Resume Section=============================*/
+
+.resume-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0d0d;
+    padding: 50px;
+    min-height: 10vh;
+}
+.resume-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.resume-btn button
+{
+    font-weight: 600;
+    width: 130px;
+    margin: 20px 0;
+    border-radius: 5px;
+    padding: 15px 30px;
+    background: linear-gradient(90deg,#755bea,#ff72c0);
+    margin: 0;
+}
+
+.resume-section img{
+    animation: float 3s ease-out infinite;
+}
+
+.resume-section h2{
+    background: none;
+    text-align: center;
+    border-radius: 0px;
+}
+
+@keyframes float{
+    50%{
+        transform: translateY(-20px);
+    }
+}
+
+/*=======================Contact Section========================*/
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #46526c;
+    padding: 2vw 4vw;
+    border-radius: 10px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px;
+    padding: 20px;
+    outline: none;
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+.contact-btn{
+    color: #f7f3f4;
+    font-weight: 600;
+    background:#00ABE790;
+    border-radius: 10px;
+    cursor: pointer;
+}

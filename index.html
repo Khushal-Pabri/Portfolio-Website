@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <div class="logo">
+        <img src="./images/portfolio-my-profile-browser-svgrepo-com.svg" alt="" height="50">
+        <span>PORTFOLIO</span>
+        </div>
+        <div class="right-side-nav"> 
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#about">Projects</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav> 
+        <a href="#" class="cta"><button>Contact</button></a>
+        </div>
+
+        <div class="dropdown"> <i class="ri-menu-line"></i> </div>
+
+        <div class="dropdown-menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#" class="cta2"><button>Contact</button></a></li>
+        </div>
+    </header>
+
+    <script>
+        const dropdown = document.querySelector('.dropdown')
+        const dropdownicon = document.querySelector('.dropdown i')
+        const dropdownMenu = document.querySelector('.dropdown-menu')
+
+        dropdown.onclick = function()
+        {
+            dropdownMenu.classList.toggle('open')
+        }
+    </script>
+
+    <!--====================Hero Section=========================-->
+    <main>
+        <section class="section-hero section" id="about"> 
+            <div class="container grid grid-2-column">
+                <div class="section-hero-data" data-aos="fade-down">
+                    <p class="hero-heading">
+                        Hi, I'm
+                    </p>
+                    <h1>KHUSHAL PABRI</h1>
+                    <P class="hero-para">
+                        "I am a student at Delhi Technological University, currently focusing on web development and C++. Excited to learn and innovate in the world of technology!"
+                    </P>
+                    <div class="hero-btns">
+                        <a href="#" class="reach"><button>Contact</button></a>
+                        <a href="#" class="reach reach1"><button>Resume</button></a>
+                    </div>
+                </div>
+                <div class="section-hero-image">
+                    <img src="./images/undraw_code_thinking_re_gka2.svg" class="hero-image" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=====================Skills Section==================-->
+
+    <section class="section skill-section">
+        
+
+        <div class="all-skills" data-aos="zoom-in-up">
+            <div class="skill-heading"> 
+                <h2>SKILL SET</h2>
+            </div>
+            <div class="skill-types" data-aos="zoom-in-up">
+                <div class="skill-list">
+                    <h3>FRONTEND</h3>
+                    <div class="skill-card">
+                        <i class="ri-html5-line skill-icon html-icon"></i>
+                        <span class="skill-text">HTML</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ri-css3-line skill-icon css-icon"></i>
+                        <span class="skill-text">CSS</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ri-javascript-line skill-icon js-icon"></i>
+                        <span class="skill-text">JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ri-bootstrap-line skill-icon bootstrap-icon"></i>
+                        <span class="skill-text">Bootstrap</span>
+                    </div>
+                </div>
+    
+                <div class="skill-list">
+                    <h3>OTHERS</h3>
+                    <div class="skill-card">
+                        <i class="ri-code-s-slash-line skill-icon Cpp-icon"></i>
+                        <span class="skill-text">C++</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ri-git-branch-line skill-icon git-icon"></i>
+                        <span class="skill-text">Git</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ri-github-fill skill-icon github-icon"></i>
+                        <span class="skill-text">GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================================Projects Section===================================-->
+
+    <section class="section project-section">
+        <div class="project-flex" data-aos="zoom-in-up">
+            <div>
+                <h2>PROJECTS</h2>
+            </div>
+            <div class="project-grid">
+                <div class="project-card" data-aos="zoom-in-up">
+                    <img src="./images/portfoliowebsite.png" alt="" class="project-image">
+                    <p class="project-text">Portfolio Website</p>
+                    <p class="project-desc">A personal portfolio website made from scratch using only HTML, CSS and Javascript.</p>
+                    <div class="project-buttons">
+                        <a href="" class="project-button"><button>Live Demo</button></a>
+                        <a href="" class="project-button"><button>Repository</button></a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in-up">
+                    <img src="./images/webfactory-ltd-NoOrDKxUfzo-unsplash.jpg" alt="" class="project-image">
+                    <p class="project-text">Coming Soon</p>
+                    <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ex.</p>
+                    <div class="project-buttons">
+                        <a href="" class="project-button"><button>Live Demo</button></a>
+                        <a href="" class="project-button"><button>Repository</button></a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in-up">
+                    <img src="./images/webfactory-ltd-NoOrDKxUfzo-unsplash.jpg" alt="" class="project-image">
+                    <p class="project-text">Coming Soon</p>
+                    <p class="project-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, velit?</p>
+                    <div class="project-buttons">
+                        <a href="" class="project-button"><button>Live Demo</button></a>
+                        <a href="" class="project-button"><button>Repository</button></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--=============================Resume Section=====================================-->
+
+    <section class="section resume-section">
+        <div class="resume-flex">
+            <img src="./images/icons8-resume-96.png" alt="">
+            <h2>Link To Resume</h2>
+            <div class="resume-btns">
+               <a href="#" class="resume-btn"><button>Resume</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!--================================Contact Section===============================-->
+    <section class="section contact-section">
+        <h2 data-aos="zoom-in-up">Contact</h2>
+        <div class="contact-form" data-aos="zoom-in-up">
+            <form action="#">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here....."></textarea>
+                <input type="button" value="Send" class="contact-btn">
+            </form>
+        </div>
+        
+    </section>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
