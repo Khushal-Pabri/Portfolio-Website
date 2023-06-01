@@ -161,6 +161,9 @@ button:hover{
     flex-direction: column;
     justify-content: center;
 }
+.hero-btns{
+    display: flex;
+}
 .reach button{
     font-weight: 600;
     width: 130px;
@@ -188,9 +191,7 @@ h1{
 .hero-image{
     width: 100%;
     height: auto;
-    min-width: 400px;
     max-width: 700px;
-    border-radius: 50px;
 }
 .hero-heading{
     margin: 0;
@@ -207,14 +208,15 @@ h1{
     }
 
 }
-@media (max-width: 632px)
+@media (max-width: 576px)
 {
     .grid{
+        grid-template-columns: minmax(70vw,1fr);
         display: grid;
-        gap: 1rem;
+        gap: 2rem;
     }
     h1{
-        font-size: 2.5rem;
+        font-size: 10.5vw;
         margin: 0;
         padding: 0;
     }
@@ -228,14 +230,27 @@ h1{
     }
     .hero-image{
         width: 100%;
-        min-width: 100px;
+        min-width: 50px;
         height: auto;
         max-width: 700px;
-        border-radius: 50px;
     }
     .section-hero{
         display: flex;
         justify-content:center ;
+    }
+
+    .reach button{
+        font-weight: 600;
+        width: 25vw;
+        padding: 1.5vw 3.0vw;
+        margin: 15px 0;
+    }
+    .reach1 button{
+        margin: 10px 0;
+    }
+    .hero-btns{
+        display: flex;
+        flex-direction: column;
     }
 
 }
